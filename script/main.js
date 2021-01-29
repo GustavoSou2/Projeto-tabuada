@@ -6,24 +6,39 @@
 
 var numberAnswer = document.getElementById("answer-question");
 const button = document.getElementById('button');
-const containerMultTable = document.querySelector('.sub-case-mult-table');
 const caseMultipleTable = document.getElementById('element-case-mult-table'); /* container */
+const containerMultTable = document.querySelector('.sub-case-mult-table');
+const containerMensageWarning = document.querySelector('.container-warning-mensage');
 var isActiveCaseMult = false;
 
 button.addEventListener('click', () => {
     var arrayNumberMultiTable = "";
     let number;
+
+    caseMultipleTable.innerHTML = arrayNumberMultiTable;
     /* Calcular a tabuada com o numero dado pelo usuário */
-    for (let i = 0; i <= 10; i++) {
-        number = numberAnswer.value * i;
-        arrayNumberMultiTable += numberAnswer.value + " X " + i + " = " + number + "<br>";
-        isActiveCaseMult = false;
-    }
-    if(!isActiveCaseMult) {
-        containerMultTable.classList.remove('hidden')
-        containerMultTable.classList.add('appear')
-        caseMultipleTable.innerHTML = arrayNumberMultiTable;
-    }
+    /* Validators */
+    if (numberAnswer.value.length == 0) {
+        containerMultTable.classList.remove('hidden');
+        containerMensageWarning.classList.remove('hidden');
+        containerMultTable.classList.add('appear');
+        containerMensageWarning.classList.add('appear');
+
+    } else /* if (!numberAnswer.value.length == 0) */ {
+        for (let i = 0; i <= 10; i++) {
+            number = numberAnswer.value * i;
+            arrayNumberMultiTable += numberAnswer.value + " X " + i + " = " + number + "<br>";
+            isActiveCaseMult = false;
+        }
+
+        if (!isActiveCaseMult) {
+            containerMensageWarning.classList.remove('appear');
+            containerMensageWarning.classList.add('hidden');
+            containerMultTable.classList.remove('hidden');
+            containerMultTable.classList.add('appear');
+            caseMultipleTable.innerHTML = arrayNumberMultiTable;
+        }
+    }  
 
     containerMultTable.style.animation = "";
     setTimeout(() => {

@@ -110,7 +110,7 @@ body {
 .sub-case-mult-table {
     width: 90%;
     height: auto;
-    min-height: 190px;
+    min-height: 100px;
     padding: 20px 0px;
     display: block;
     margin: auto;
@@ -142,6 +142,16 @@ body {
         opacity: 0;
     }
 }
+/* warning mensage */
+.warning-mensage {
+    width: fit-content;
+    height: auto;
+    font-size: 1rem;
+    color:  #f73434;
+    border-bottom: 1px solid #f73434;
+    display: block;
+    margin: auto;
+}
 /* footer */
 footer {
     width: 100%;
@@ -152,6 +162,6 @@ footer {
     align-items: center;
 }
 #copyright-comment {
-    color: #efefef;
+    color: #efefef ;
     text-align: center;
 }
