@@ -7,34 +7,57 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/main.css">
-    <title>Tabuada | Interativo</title>
+    <title>Tabuada Interativa | Início</title>
 </head>
 <body>
     <header id="main-screen">
         <div id="bar">
+            <div class="container-icon-open-menu appear">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="container-menu hidden-left">
+                    <i class="fa fa-close"></i>
+                <nav class="sub-container-menu">
+                    <ul class="menu">
+                        <li class="item-menu"> 
+                            <i class="fa fa-home"></i>
+                            <a href="#" class="nav-item-menu">Iníco</a>
+                        </li>
+                        <li class="item-menu"> 
+                            <i class="fa fa-times"></i>
+                            <a href="./mult-table.html" class="nav-item-menu">Tabuada</a>
+                        </li>
+                        <li class="item-menu"> 
+                            <i class="fa fa-question"></i>
+                            <a href="./quiz.html" class="nav-item-menu">Quiz</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <h1 id="logo-bar">Tabuada Interative</h1>
         </div>
-        <section id="case-screen-main">
-            <div id="case-element-question">
-                <div id="sub-case-question">
-                    <span id="question">Qual tabuada você deseja ver?</span>
-                    <input type="number" id="answer-question" min="1" max="100" placeholder="Num...Ex: 1"> 
-                    <button id="button">Ver Tabuada</button>
+        <section id="case-home-main">
+            <section class="container-home-element element-image">
+                <div id="container-image">
+                    <img src="./img/main-image.png" alt="photo_main_scree" id="image">
                 </div>
-                <!-- div field multiple table hidden -->
-                <div class="sub-case-mult-table hidden">
-                    <div class="container-warning-mensage hidden">
-                        <span class="warning-mensage"> Digite um numero válido !</span>
-                    </div>
-                    <p id="element-case-mult-table"></p>
+            </section>
+            <section class="container-home-element element-into">
+                <div id="container-description">
+                    <h1 id="description-into-value">
+                         Treine suas habilidades de multiplicação aqui
+                    </h1>
+                    <span id="sub-description-into-value">
+                        Veja tabuadas e acerte as questões de multiplicão
+                    </span>
                 </div>
-            </div>
+            </section>
         </section>
     </header>
     <footer>
-        <p id="copyright-comment">Direito reservados &copy; 2020 <br> Desenvolvido por Gustavo de Souza <br> <i> Version 0.0.1</i> </p>
-    </footer> 
-    
+        <p id="copyright-comment">Direito reservados &copy; 2020 <br> Desenvolvido por Gustavo de Souza <br> <i> Version
+                1.0.1</i> </p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
     <script src="./script/main.js"></script>

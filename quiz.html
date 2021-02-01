@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/quiz-style.css">
+    <title>Tabuada | Interativo</title>
+</head>
+
+<body>
+    <header id="main-screen">
+        <div class="container-icon-open-menu ">
+            <i class="fa fa-angle-double-left"></i>
+        </div>
+        <div id="bar">
+            <h1 id="logo-bar">Quiz de matemática</h1>
+        </div>
+        <section id="case-screen-main">
+            <div id="case-element-question">
+                <div id="sub-case-question">
+                    <span id="question-quiz">Quanto é <span id="random-question"></span>?</span>
+                    <div id="container-options-answers">
+                        <!-- container 1 -->
+                        <span class="answers-element option-1"> 
+
+                        </span>
+                        <!-- container 2 -->
+                        <span class="answers-element option-2"> 
+
+                        </span>
+                        <!-- container 3 -->
+                        <span class="answers-element option-3"> 
+
+                        </span>
+                        <!-- container 4 -->
+                        <span class="answers-element option-4"> 
+
+                        </span>
+                        <div id="container-button">
+                            <input type="button" value="Responder" id="button-quiz">
+                        </div>
+                    </div>
+                    <!-- conteinar answer status -->
+                    <div id="answer-status">
+                        <span class="correct-answer correct hidden">
+                            <i class=" fa fa-check"></i>
+                        </span>
+                        <span class="correct-answer wrong hidden">
+                            <i class="fa fa-close"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- div field multiple table hidden -->
+            </div>
+        </section>
+    </header>
+    <footer>
+        <p id="copyright-comment">Direito reservados &copy; 2020 <br> Desenvolvido por Gustavo de Souza <br> <i> Version
+                1.0.1</i> </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./script/quiz-main.js"></script>
+</body>
+
+</html>
