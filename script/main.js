@@ -15,7 +15,7 @@ var statusMenu = false;
 window.onload = () => {
     btnOpenMenu.addEventListener('click', function (){
         if(!statusMenu) {
-            caseMenu.classList.remove('hidden-left');
+            caseMenu.classList.remove('hidden-right');
             caseMenu.classList.add('appear-auto');
             btnOpenMenu.classList.add('hidden');
         }
@@ -23,7 +23,7 @@ window.onload = () => {
             itemMenu.style.animation = "";
             itemMenu.addEventListener('click', () => {
                 caseMenu.classList.remove('appear-auto');
-                caseMenu.classList.add('hidden-left');
+                caseMenu.classList.add('hidden-right');
                 btnOpenMenu.classList.add('appear')
             })
             setTimeout(() => {
@@ -35,7 +35,7 @@ window.onload = () => {
 
     btnCloseMenu.addEventListener('click', () => {
         caseMenu.classList.remove('appear-auto');
-        caseMenu.classList.add('hidden-left');
+        caseMenu.classList.add('hidden-right');
         btnOpenMenu.classList.add('appear')
     })
 } 
